@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const TodoList = () => {
+type TodoListPropsType = {
+    title: string
+}
+
+const TodoList: FC<TodoListPropsType> = (props) => {
     return (
         <div>
-            <h3>What to learn</h3>
+            <h3>{props.title}</h3>
             <div>
                 <input/>
                 <button>+</button>
