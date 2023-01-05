@@ -23,3 +23,7 @@
     border-radius: 3px;
     outline-color: green;
 }
+
+.inputError {
+    border: 3px solid red;
+}
