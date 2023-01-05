@@ -41,13 +41,13 @@ function App() {
         setFilter(value);
     }
 
-    const changeStatus = (id: string) => {
-       /* const taskForUpdate = tasks.find(t => t.id === id)
-        if(taskForUpdate){
-            taskForUpdate.isDone = !taskForUpdate.isDone
-            setTasks([...tasks])
-        }*/
-        setTasks(tasks.map(t => t.id === id ? {...t, isDone: !t.isDone} : t))
+    const changeStatus = (id: string, isDone: boolean) => {
+        /* const taskForUpdate = tasks.find(t => t.id === id)
+         if(taskForUpdate){
+             taskForUpdate.isDone = !taskForUpdate.isDone
+             setTasks([...tasks])
+         }*/
+        setTasks(tasks.map(t => t.id === id ? {...t, isDone: isDone} : t))
     }
 
     return (
