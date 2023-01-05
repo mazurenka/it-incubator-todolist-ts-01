@@ -14,3 +14,12 @@
 .notIsDone {
     font-weight: bold;
 }
+
+.activeFilter {
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 3px;
+    outline-color: green;
+}
